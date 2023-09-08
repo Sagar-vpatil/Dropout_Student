@@ -8,6 +8,49 @@
     <link rel="stylesheet" href="./Sub Pages home/assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="./Sub Pages home/assets/css/styles.css">
     <link rel="stylesheet" href="./Sub Pages home/assets/css/Login-Form-Basic.css">
+   <style>body{
+    margin-top:20px;
+    background: #f6f9fc;
+}
+.account-block {
+    padding: 0;
+    background-image: url(https://bootdey.com/img/Content/bg1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    position: relative;
+}
+.account-block .overlay {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.account-block .account-testimonial {
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    margin: 0 auto;
+    padding: 0 1.75rem;
+    bottom: 3rem;
+    left: 0;
+    right: 0;
+}
+
+.text-theme {
+    color: #5369f8 !important;
+}
+
+.btn-theme {
+    background-color: #5369f8;
+    border-color: #5369f8;
+    color: #fff;
+}</style>
 
 </head>
 
@@ -41,57 +84,62 @@
     </section>
     <script src="./Sub Pages home/assets/bootstrap/js/bootstrap.min.js"></script> -->
 
-    <section class="vh-100" style="background-color: #9A616D;">
-        <div class="container py-5 h-100">
-          <div class="row d-flex justify-content-center align-items-center h-100">
-            <div class="col col-xl-10">
-              <div class="card" style="border-radius: 1rem;">
-                <div class="row g-0">
-                  <div class="col-md-6 col-lg-5 d-none d-md-block">
-                    <img src="https://pbs.twimg.com/profile_images/803510533416714240/hYW2hQG__400x400.jpg"
-                      alt="login form" class="img-fluid" style="border-radius: 1rem 0 0 1rem;" />
-                  </div>
-                  <div class="col-md-6 col-lg-7 d-flex align-items-center">
-                    <div class="card-body p-4 p-lg-5 text-black">
-      
-                      <form>
-      
-                        <div class="d-flex align-items-center mb-3 pb-1">
-                          <i class="fas fa-cubes fa-2x me-3" style="color: #ff6219;"></i>
-                          <span class="h1 fw-bold mb-0">Logo</span>
+    <div id="main-wrapper" class="container">
+        <div class="row justify-content-center">
+            <div class="col-xl-10">
+                <div class="card border-0">
+                    <div class="card-body p-0">
+                        <div class="row no-gutters">
+                            <div class="col-lg-6">
+                                <div class="p-5">
+                                    <div class="mb-5">
+                                        <h3 class="h4 font-weight-bold text-theme">Login</h3>
+                                    </div>
+    
+                                    <h6 class="h5 mb-0">Welcome back!</h6>
+                                    <p class="text-muted mt-2 mb-5">Enter your email address and password to access admin panel.</p>
+    
+                                    <form>
+                                        <div class="form-group">
+                                            <label for="exampleInputEmail1">Email address</label>
+                                            <input type="email" class="form-control" id="exampleInputEmail1">
+                                        </div>
+                                        <div class="form-group mb-5">
+                                            <label for="exampleInputPassword1">Password</label>
+                                            <input type="password" class="form-control" id="exampleInputPassword1">
+                                        </div>
+                                        <button type="submit" class="btn btn-theme">Login</button>
+                                        <a href="#l" class="forgot-link float-right text-primary">Forgot password?</a>
+                                    </form>
+                                </div>
+                            </div>
+    
+                            <div class="col-lg-6 d-none d-lg-inline-block">
+                                <div class="account-block rounded-right">
+                                    <div class="overlay rounded-right"></div>
+                                    <div class="account-testimonial">
+                                        <h4 class="text-white mb-4">This  beautiful theme yours!</h4>
+                                        <p class="lead text-white">"Best investment i made for a long time. Can only recommend it for other users."</p>
+                                        <p>- Admin User</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-      
-                        <h5 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;">Sign into your account</h5>
-      
-                        <div class="form-outline mb-4">
-                          <input type="email" id="form2Example17" class="form-control form-control-lg" />
-                          <label class="form-label" for="form2Example17">Email address</label>
-                        </div>
-      
-                        <div class="form-outline mb-4">
-                          <input type="password" id="form2Example27" class="form-control form-control-lg" />
-                          <label class="form-label" for="form2Example27">Password</label>
-                        </div>
-      
-                        <div class="pt-1 mb-4">
-                          <button class="btn btn-dark btn-lg btn-block" type="button">Login</button>
-                        </div>
-      
-                        <a class="small text-muted" href="#!">Forgot password?</a>
-                        <p class="mb-5 pb-lg-2" style="color: #393f81;">Don't have an account? <a href="#!"
-                            style="color: #393f81;">Register here</a></p>
-                        <a href="#!" class="small text-muted">Terms of use.</a>
-                        <a href="#!" class="small text-muted">Privacy policy</a>
-                      </form>
-      
+    
                     </div>
-                  </div>
+                    <!-- end card-body -->
                 </div>
-              </div>
+                <!-- end card -->
+    
+                <p class="text-muted text-center mt-3 mb-0">Don't have an account? <a href="register.html" class="text-primary ml-1">register</a></p>
+    
+                <!-- end row -->
+    
             </div>
-          </div>
+            <!-- end col -->
         </div>
-      </section>
+        <!-- Row -->
+    </div>
 </body>
 
 </html>
