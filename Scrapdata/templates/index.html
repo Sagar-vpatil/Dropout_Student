@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+   <form action="{% url 'urls:index' %}" method="post">
+       {%  csrf_token %}
+  <div class="form-group container m-5">
+    <label for="url">Enter the url here</label>
+    <input type="text" name="url" class="form-control" id="url" placeholder="Enter the URL">
+  </div>
+   </form>
+
+   <div class="container m-5">
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">College</th>
+      <th scope="col">PRN</th>
+      <th scope="col">Transfer certificate name</th>
+      <th scope="col">T.C No</th>
+      <th scope="col">Date</th>
+      <th scope="col">Reason</th>
+      <th scope="col">Mobile No.</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>GH Raisoni</td>
+      <td>2019015400339550 FE</td>
+      <td>Vishal Rajendra Janjal</td>
+      <td>773</td>
+      <td>30,07,20</td>
+      <td>First Year Computer Scl. Exam form not filled and was absent for whole Academic year 2019-20 admission Cancelled at his own request</td>
+      <td>7775945022</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>GH Raisoni</td>
+      <td>2019015400161167 FE</td>
+      <td>Shaikh Arshad Zahur.</td>
+      <td>996</td>
+      <td>30-07-2020</td>
+      <td>First Year Computer Scl. Exam form not filled and was absent for whole Academic year 2019-20 admission Cancelled at his own request</td>
+      <td>9146430410</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>GH Raisoni</td>
+      <td>2022100101010663 FE</td>
+      <td>Saurabh Rajendra Thakur</td>
+      <td>2043</td>
+      <td>20,07,2023</td>
+      <td>First Year Engg. B.Tech Branch Computer Science First Sem. Examination having Result CGPA 3.44 and Not attempt Second Sem. Exam in Admissin Cancelled as per his own Request.</td>
+      <td>7020051163</td>
+    </tr>
+  </tbody>
+</table>
+   </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
